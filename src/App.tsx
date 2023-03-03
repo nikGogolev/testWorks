@@ -5,8 +5,7 @@ import Widget from "./components/widget/widget";
 function App() {
   return (
     <div className="App">
-      <p>asdgdsfg</p>
-      <Widget />
+      <Widget expandable></Widget>
     </div>
   );
 }
