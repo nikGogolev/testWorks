@@ -1,0 +1,44 @@
+.table-header,
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  vertical-align: middle;
+}
+.table-header {
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.table-cell {
+  flex: 1;
+  border-right: 1px solid black;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-cell-content {
+}
+
+.table-cell.name {
+  flex: 0 0 32%;
+  text-align: left;
+}
+
+.table-cell.price {
+  flex: 0 0 14%;
+}
+
+.table-cell.rate {
+  flex: 0 0 17%;
+}
+
+.table-cell.order {
+  flex: 0 0 21%;
+}
+
+.table-cell.ordered {
+  flex: 0 0 16%;
+  border-right: none;
+}

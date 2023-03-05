@@ -4,7 +4,7 @@ import "./widget.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 interface WidgetProps {
   title?: string;
-  contentText?: string;
+  contentTitle?: string;
   expandable?: boolean;
   contentCildren?: ReactNode;
   controlChildren?: ReactNode;
@@ -38,9 +38,11 @@ function Widget(props: WidgetProps) {
               </button>
             </div>
           </div>
-          <div className="widget-content">
+          <div
+            className={(fullScreen ? "full-screen " : "") + "widget-content"}
+          >
             <h2 className="widget-content-title">
-              {props.contentText ? props.contentText : "Widget content title"}
+              {props.contentTitle ? props.contentTitle : ""}
             </h2>
             <div className="widget-content-data">{props.children}</div>
           </div>

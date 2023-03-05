@@ -1,0 +1,19 @@
+.select-category-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5vh;
+  background-color: #fff;
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.select-category-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 5px 10px;
+}
+
+.select-category-btn:hover {
+  background-color: cornflowerblue;
+}
