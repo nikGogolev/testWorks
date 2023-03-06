@@ -13,6 +13,7 @@ function Person({ fetchAge }: PersonProps) {
   const [name, setName] = useState("John Smith");
   const [persons, setPersons] = useState<AgedPerson[]>([]);
 
+  // Здесь используется callback для установки состояния, чтобы быть уверенным, что используем последнее актуальное состояние
   const addPerson = (name: string, age: number) => {
     setPersons((prev) => prev.concat({ name, age }));
   };
@@ -41,6 +42,7 @@ function Person({ fetchAge }: PersonProps) {
 
         <button
           style={{ padding: "5px" }}
+          // Здесь заменил на функцию обработчик
           onClick={() => addPerson(name, name.length)}
           disabled={buttonsDisabled}
         >

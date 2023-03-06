@@ -3,6 +3,7 @@ import "./App.css";
 import Person from "./Person";
 
 function App() {
+  // функция запроса возраста с сервера
   function fetchAge(name: string): Promise<number> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
